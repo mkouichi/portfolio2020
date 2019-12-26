@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" id="language">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/7b4d01730d.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" <!--
+        Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Kouichi Mihara | Full Stack Developer</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <a href="#!" class="brand-logo">KM</a>
+
+                        <!-- Toggle Button -->
+                        <a href="#!" data-target="mobile-links" class="sidenav-trigger right show-on-medium-and-down"><i
+                                class="material-icons">menu</i></a>
+
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><button class="enBtn lang-btn waves-effect waves-teal btn-flat white-text"
+                                    name="en">en</button></li>
+                            <li><button class="jaBtn lang-btn waves-effect waves-teal btn-flat white-text"
+                                    name="ja">日本語</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Toggle Menu (needs to be parallel to .navbar-fixed) -->
+        <ul id="mobile-links" class="sidenav">
+            <li><a class="sidenav-close" href="#home">Home</a></li>
+            <li><a class="sidenav-close" href="#work">Work</a></li>
+            <li><a class="sidenav-close" href="#about">About</a></li>
+            <li><a class="sidenav-close" href="#contact">Contact</a></li>
+            <li><button class="enBtn lang-btn btn waves-effect waves-light sidenav-close" name="en">en</button></li>
+            <li><button class="jaBtn lang-btn btn waves-effect waves-light sidenav-close" name="ja">日本語</button></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="container section scrollspy valign-wrapper row">
+            <div class="col s-12 m-8">
+                <h1 class="lg-heading">Kouichi Mihara</h1>
+
+                <h4 class="sm-heading">Full Stack Developer</h4>
+
+                <a href="mailto:k-m2011@hotmail.co.jp"
+                    class="btn-floating btn-large waves-effect waves-light waves-circle tooltipped"
+                    data-tooltip="Email">
+                    <i class="material-icons main-icons">email</i></a>
+
+                <a href="https://github.com/mkouichi" target="_blank"
+                    class="btn-floating btn-large waves-effect waves-light waves-circle tooltipped"
+                    data-tooltip="GitHub">
+                    <i class="devicon-github-plain colored main-icons white-text"></i>
+                </a>
+            </div>
+
+            <img src="images/coffee.png" alt="coffee" id="coffee" class="col m2 hide-on-small-only">
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="work" class="container section scrollspy">
+            <h1 class="lg-heading">My Work</h1>
+
+            <p class="sm-heading switchLang flow-text" data-i18n="Check out some of my projects."
+                data-i18n-ja="ポートフォリオをご覧ください。">
+            </p>
+
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="row project">
+                    <!-- Project Image -->
+                    <div class="col s12 m10 l4 offset-m1">
+                        <a href="https://mkouichi-mongochat.herokuapp.com/" target="_blank">
+                            <img src="images/mongochat.png" alt="project1 mongochat" class="responsive-img">
+                        </a>
+                    </div>
+
+                    <!-- Project Description -->
+                    <div class="col s12 m10 l6 offset-m1 offset-l1">
+                        <h3 class="projectName">MongoChat</h3>
+
+                        <div class="technologies">
+                            <i class="devicon tooltipped devicon-html5-plain colored" data-tooltip="HTML5"></i>
+                            <i class="devicon tooltipped devicon-css3-plain colored" data-tooltip="CSS3"></i>
+                            <i class="devicon tooltipped devicon-bootstrap-plain colored" data-tooltip="Bootstrap"></i>
+                            <i class="devicon tooltipped devicon-javascript-plain colored"
+                                data-tooltip="JavaScript"></i>
+                            <i class="devicon tooltipped devicon-nodejs-plain colored" data-tooltip="Node.js"></i>
+                            <i class="devicon tooltipped devicon-express-original colored" data-tooltip="Express"></i>
+                            <i class="devicon tooltipped devicon-mongodb-plain colored" data-tooltip="MongoDB"></i>
+                        </div>
+
+                        <!-- Project Links -->
+                        <div>
+                            <a href="https://mkouichi-mongochat.herokuapp.com/" class="projectLinks" target="_blank">
+                                <i class="fas fa-eye"></i>
+                                <span class="switchLang" data-i18n="View" data-i18n-ja="デモ"></span>
+                            </a>
+
+                            <a href="https://github.com/mkouichi/chat_app" class="projectLinks" target="_blank">
+                                <i class="fab fa-github"></i><span> GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="row project">
+                    <!-- Project Image -->
+                    <div class="col s12 m10 l4 offset-m1 offset-l1 push-l7">
+                        <a href="https://mkouichi-wordbeater.herokuapp.com/" target="_blank">
+                            <img src="images/wordbeater.png" alt="project2 wordbeater" class="responsive-img">
+                        </a>
+                    </div>
+
+                    <!-- Project Description -->
+                    <div class="col s12 m10 l6 offset-m1 offset-l1 pull-l5 right-align">
+                        <h3 class="projectName">WordBeater</h3>
+
+                        <div class="technologies">
+                            <i class="devicon tooltipped devicon-html5-plain colored" data-tooltip="HTML5"></i>
+                            <i class="devicon tooltipped devicon-css3-plain colored" data-tooltip="CSS3"></i>
+                            <i class="devicon tooltipped devicon-bootstrap-plain colored" data-tooltip="Bootstrap"></i>
+                            <i class="devicon tooltipped devicon-javascript-plain colored"
+                                data-tooltip="JavaScript"></i>
+                            <i class="devicon tooltipped devicon-nodejs-plain colored" data-tooltip="Node.js"></i>
+                            <i class="devicon tooltipped devicon-express-original colored" data-tooltip="Express"></i>
+                        </div>
+
+                        <!-- Project Links -->
+                        <div>
+                            <a href="https://mkouichi-wordbeater.herokuapp.com/" class="projectLinks" target="_blank">
+                                <i class="fas fa-eye"></i>
+                                <span class="switchLang" data-i18n="View" data-i18n-ja="デモ"></span>
+                            </a>
+
+                            <a href="https://github.com/mkouichi/typing_game" class="projectLinks" target="_blank">
+                                <i class="fab fa-github"></i><span> GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="row project">
+                    <!-- Project Image -->
+                    <div class="col s12 m10 l4 offset-m1">
+                        <a href="https://mkouichi.github.io/Animal-Clinic/index.html" target="_blank">
+                            <img src="images/animalclinic.jpg" alt="project3 animalclinic" class="responsive-img">
+                        </a>
+                    </div>
+
+                    <!-- Project Description -->
+                    <div class="col s12 m10 l6 offset-m1 offset-l1">
+                        <h3 class="projectName">Animal Clinic</h3>
+
+                        <div class="technologies">
+                            <i class="devicon tooltipped devicon-html5-plain colored" data-tooltip="HTML5"></i>
+                            <i class="devicon tooltipped devicon-css3-plain colored" data-tooltip="CSS3"></i>
+                            <i class="devicon tooltipped devicon-javascript-plain colored"
+                                data-tooltip="JavaScript"></i>
+                        </div>
+
+                        <!-- Project Links -->
+                        <div>
+                            <a href="https://mkouichi.github.io/Animal-Clinic/index.html" class="projectLinks"
+                                target="_blank">
+                                <i class="fas fa-eye"></i>
+                                <span class="switchLang" data-i18n="View" data-i18n-ja="デモ"></span>
+                            </a>
+
+                            <a href="https://github.com/mkouichi/Animal-Clinic" class="projectLinks" target="_blank">
+                                <i class="fab fa-github"></i><span> GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container section scrollspy valign-wrapper">
+            <div>
+                <h1 class="lg-heading">About Me</h1>
+
+                <div class="about-info">
+                    <div class="text">
+                        <p class="switchLang flow-text"
+                            data-i18n="Hello, my name is Kouichi. I am a Full Stack Developer. I am looking for a position that will allow me to apply my current knowledge and to acquire new skills."
+                            data-i18n-ja="コウイチです。フルスタックディベロッパーです。今持っている知識を伸ばし、さらに新しいスキルを身につけ成長できるポジションを探しています。">
+                        </p>
+
+                        <p class="switchLang flow-text" data-i18n="Below is the technology that I have experience with."
+                            data-i18n-ja="下記は経験のある技術です。">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title center">Front End</span>
+
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                    <li>MaterializeCSS</li>
+                                    <li>Sass</li>
+                                    <li>jQuery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title center">Back End</span>
+
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>MongoDB</li>
+                                    <li>Express</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title center">Other</span>
+
+                                <ul>
+                                    <li>Git</li>
+                                    <li>GitHub</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- parallax -->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="images/paralleximg.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container section scrollspy">
+            <div>
+                <h1 class="lg-heading">Get in Touch</h1>
+
+                <p class="sm-heading switchLang flow-text" data-i18n="Please contact me through the form or email."
+                    data-i18n-ja="お問い合わせは下記フォームまたはメールでお願いします。"></p>
+
+                <form id="inputFields" method="POST" data-netlify="true">
+                    <div class="input-field">
+                        <i class="material-icons prefix">person</i>
+                        <input type="email" name="" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" name="" id="email" multiple required>
+                        <label for="email">Your Email</label>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <!-- recaptcha spam filter -->
+                    <div>
+                        <div class="spamFilter" data-netlify-recaptcha="true"></div>
+                    </div>
+
+                    <div class="input-field center">
+                        <button id="send" class="switchLang btn btn-large waves-effect waves-light" type="submit"
+                            name="action" data-i18n="Send" data-i18n-ja="送信">
+                        </button>
+                    </div>
+                </form>
+
+                <div id="contact-icons">
+                    <a href="mailto:k-m2011@hotmail.co.jp"
+                        class="btn-floating btn-large waves-effect waves-light waves-circle tooltipped"
+                        data-tooltip="Email">
+                        <i class="material-icons mainIcons">email</i></a>
+
+                    <a href="https://github.com/mkouichi" target="_blank"
+                        class="btn-floating btn-large waves-effect waves-light waves-circle tooltipped"
+                        data-tooltip="GitHub">
+                        <i class="devicon-github-plain colored mainIcons white-text"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="page-footer grey darken-4">
+        <div>
+            <div class="center-align">&copy; 2020 Kouichi Mihara</div>
+        </div>
+    </footer>
+
+    <!-- jQuery cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
