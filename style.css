@@ -60,6 +60,12 @@ i.devicon {
     height: 25vw;
 }
 
+.spamFilter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .waves-circle {
     background-color: var(--secondary);
     margin-right: 1rem;
