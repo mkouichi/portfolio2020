@@ -58,3 +58,6 @@ $(document).ready(function() {
         scrollOffset: 0
     });
 });
+
+// Get the current year
+document.getElementById("year").innerHTML = new Date().getFullYear();
