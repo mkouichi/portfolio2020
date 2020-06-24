@@ -1,108 +1,102 @@
 :root {
-    --base: #fff9e0;
-    --primary: #3e3a27;
-    --secondary: #007560;
+	--base: #fff9e0;
+	--primary: #3e3a27;
+	--secondary: #007560;
 }
 
 body {
-    background-color: var(--base);
-    color: var(--primary);
+	background-color: var(--base);
+	color: var(--primary);
 }
 
 nav {
-    background-color: var(--primary);
+	background-color: var(--primary);
 }
 
 .section {
-    min-height: 70vh;
-    padding-top: 64px;
-    margin-top: -64px;
+	min-height: 70vh;
+	padding-top: 64px;
+	margin-top: -64px;
 }
 
 i.main-icons {
-    font-size: 30px;
+	font-size: 30px;
 }
 
 #home .btn-floating {
-    margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 .row.project {
-    margin: 10vw auto;
+	margin: 10vw auto;
 }
 
 .row.project:last-child {
-    margin: 10vw auto 0;
+	margin: 10vw auto 0;
 }
 
 .projectLinks {
-    color: var(--primary);
-    font-size: 1.4rem;
+	color: var(--primary);
+	font-size: 1.4rem;
 }
 
 span.switchLang {
-    margin-right: 1rem;
+	margin-right: 1rem;
 }
 
 .technologies {
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 i.devicon {
-    font-size: 3rem;
+	font-size: 3rem;
 }
 
 .card {
-    background-color: #ebe5cc;
+	background-color: #ebe5cc;
 }
 
 .parallax-container {
-    height: 25vw;
-}
-
-.spamFilter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	height: 25vw;
 }
 
 .waves-circle {
-    background-color: var(--secondary);
-    margin-right: 1rem;
+	background-color: var(--secondary);
+	margin-right: 1rem;
 }
 
 .page-footer {
-    padding: 1.2rem;
+	padding: 1.2rem;
 }
 
 #nav-mobile .lang-btn {
-    margin-left: 1rem;
-    background-color: #272517;
+	margin-left: 1rem;
+	background-color: #272517;
 }
 
 #mobile-links .lang-btn {
-    margin-left: 2rem;
-    background-color: var(--primary);
+	margin-left: 2rem;
+	background-color: var(--primary);
 }
 
 #home {
-    min-height: 90vh;
+	min-height: 90vh;
 }
 
 #coffee {
-    width: 25%;
-    margin-top: 15rem;
+	width: 25%;
+	margin-top: 15rem;
 }
 
 #contact {
-    margin: auto;
+	margin: auto;
 }
 
 #send {
-    background-color: var(--secondary);
+	background-color: var(--secondary);
 }
 
 #contact-icons {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
